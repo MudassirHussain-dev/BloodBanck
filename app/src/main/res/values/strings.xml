@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Blood Bank</string>
+
+    <string name="facebook_app_id">2321186191432082</string>
+    <string name="facebook_login_protocol_scheme">fb2321186191432082</string>
+
+    <string name="google_client_id">20817490905-6parf295ds27u8ndjq6nlgqr69oggji5.apps.googleusercontent.com</string>
+    <string name="google_client_secret">5jdeMIocq8hbJwYrcbk7b9l2</string>
+    <string name="login_amp_register"><![CDATA[LOGIN & REGISTER]]></string>
+
+    <!--Image sized-->
+    <string name="img_width">350</string>
+    <string name="img_height">350</string>
+    <string name="img_quality">70</string>
+
+    <string name="PREF_FILE">PREF_FILE</string>
+
+
+    <!--//release SHA-1 DA:E9:1C:E8:9D:CD:D4:AA:74:57:FC:F2:4D:99:3F:90:F7:20:14:94-->
+    <!-- keytool -list -v -keystore /Users/waqarvicky/AndroidStudioProjects/BloodBank2/BloodBank2 -alias BloodBank2 -->
+
+</resources>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.AddBloodRequestActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/addToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:title="Request for Blood"
+        app:titleTextColor="@color/black" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etRequestType"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rounded_search_view"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+                android:drawablePadding="10dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Choose request type"
+                android:paddingStart="20dp"
+                android:paddingTop="0dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="0dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkGrey" />
+
+            <EditText
+                android:id="@+id/etBloodGroup"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rounded_search_view"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+                android:drawablePadding="10dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Pick a blood group"
+                android:paddingStart="20dp"
+                android:paddingTop="0dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="0dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkGrey" />
+
+            <EditText
+                android:id="@+id/etReason"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rounded_search_view"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+                android:drawablePadding="10dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Choose your reason"
+                android:paddingStart="20dp"
+                android:paddingTop="0dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="0dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkGrey" />
+
+            <EditText
+                android:id="@+id/etCityy"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rounded_search_view"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:drawableEnd="@drawable/ic_navigate_next_black_24dp"
+                android:drawablePadding="10dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Your preferred city"
+                android:paddingStart="20dp"
+                android:paddingTop="0dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="0dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkGrey" />
+
+            <EditText
+                android:id="@+id/etLoation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rounded_search_view"
+                android:hint="Type a hospital name or location"
+                android:lines="3"
+                android:paddingStart="20dp"
+                android:paddingTop="0dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="0dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkGrey" />
+
+            <TextView
+                android:id="@+id/btnGetLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:drawableStart="@drawable/ic_location_on_black_24dp"
+                android:drawablePadding="5dp"
+                android:text="Get my current location"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16dp" />
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:paddingStart="20dp"-->
+            <!--android:text="Are you posting this request for someone?"-->
+            <!--android:textSize="18dp"-->
+            <!--android:textStyle="bold"-->
+            <!--tools:ignore="RtlSymmetry" />-->
+
+
+            <EditText
+                android:id="@+id/etPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rounded_search_view"
+                android:hint="Enter phone number"
+                android:inputType="phone"
+                android:paddingStart="20dp"
+                android:paddingTop="0dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="0dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkGrey"
+                android:layout_marginTop="15dp"/>
+
+
+            <EditText
+                android:id="@+id/etMessage"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rounded_search_view"
+                android:hint="Write message for donor"
+                android:lines="3"
+                android:paddingStart="20dp"
+                android:paddingTop="0dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="0dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkGrey" />
+
+            <Button
+                android:id="@+id/btnRequestFinish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/btn_bg"
+                android:text="FINISH"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

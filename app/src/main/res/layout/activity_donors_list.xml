@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    tools:context=".ui.BloodRequestActivity">
+
+    <View
+        android:id="@+id/headreView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/home_page_header_bg"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/donorsToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:title="Explore all requests"
+            app:titleTextColor="@color/white" />
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="110dp"-->
+            <!--android:layout_marginStart="15dp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_marginEnd="15dp"-->
+            <!--android:layout_marginBottom="15dp"-->
+            <!--android:background="@drawable/home_page_gradiant"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="10dp"-->
+            <!--android:visibility="gone"-->
+            <!--android:weightSum="5">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_weight="2"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tvDonorsCountt"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center"-->
+                    <!--android:textColor="@color/lightGrey"-->
+                    <!--android:textSize="22dp" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Requests"-->
+                    <!--android:textColor="@color/lightGrey"-->
+                    <!--android:textSize="17dp" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btnBecomeDonor"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_weight="3"-->
+                <!--android:background="@drawable/btn_white_round"-->
+                <!--android:drawableStart="@drawable/ic_add_round_red"-->
+                <!--android:paddingStart="20dp"-->
+                <!--android:text="REQUEST BLOOD"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:textStyle="bold"-->
+                <!--tools:ignore="RtlSymmetry" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_marginStart="15dp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_marginEnd="15dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:background="@drawable/home_page_gradiant"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:visibility="gone">-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btnNewRequests"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_marginStart="15dp"-->
+                <!--android:layout_marginEnd="15dp"-->
+                <!--android:background="@drawable/btn_white_round"-->
+                <!--android:text="New Requests"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:textStyle="bold"-->
+                <!--tools:ignore="RtlSymmetry" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/btnMyRequests"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_marginStart="15dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginEnd="15dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:background="@drawable/home_page_gradiant"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:visibility="gone">-->
+
+            <!--<Button-->
+                <!--android:id="@+id/myRequests"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_marginStart="15dp"-->
+                <!--android:layout_marginEnd="15dp"-->
+                <!--android:background="@drawable/btn_white_round"-->
+                <!--android:text="My Requests"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:textStyle="bold"-->
+                <!--tools:ignore="RtlSymmetry" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_marginStart="15dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginEnd="15dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:background="@drawable/home_page_gradiant"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:visibility="gone">-->
+
+            <!--<Button-->
+                <!--android:id="@+id/acceptedRequests"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_marginStart="15dp"-->
+                <!--android:layout_marginEnd="15dp"-->
+                <!--android:background="@drawable/btn_white_round"-->
+                <!--android:text="My Responses"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:textStyle="bold"-->
+                <!--tools:ignore="RtlSymmetry" />-->
+
+        <!--</LinearLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <TextView
+                android:id="@+id/btnBecomeDonor"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:text="Request Blood"
+                android:textColor="@color/colorPrimary"
+                android:drawableStart="@drawable/ic_add_round_red"
+                android:paddingStart="20dp"
+                android:src="@drawable/donate"
+                tools:ignore="RtlSymmetry" />
+
+
+            <TextView
+                android:id="@+id/btnNewRequests"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:text="New Requests"
+                android:textColor="@color/colorPrimary"
+                android:drawableStart="@drawable/ic_new_request"
+                android:src="@drawable/become"
+                android:gravity="center"
+                android:paddingStart="20dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <TextView
+                android:id="@+id/myRequests"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:text="My Requests"
+                android:textColor="@color/colorPrimary"
+                android:drawableStart="@drawable/ic_my_requests"
+                android:src="@drawable/my_requests"
+                android:gravity="center"
+                android:paddingStart="20dp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/acceptedRequests"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:text="My Responses"
+                android:textColor="@color/colorPrimary"
+                android:drawableStart="@drawable/ic_my_responses"
+                android:src="@drawable/my_responses"
+                android:gravity="center"
+                android:paddingStart="20dp"
+                />
+
+        </LinearLayout>
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/pullToRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/donorsRecView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

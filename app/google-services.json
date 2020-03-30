@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "738356187604",
+    "firebase_url": "https://bloodbankapp-83b59.firebaseio.com",
+    "project_id": "bloodbankapp-83b59",
+    "storage_bucket": "bloodbankapp-83b59.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738356187604:android:47683a0b1bfeb5c5",
+        "android_client_info": {
+          "package_name": "com.aampower.bloodbank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738356187604-g3208gagcv1f9fmhfjbp3npahui2dtvm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuO9Bc7TXwwkyx98yaxtguI4WytbX7NtA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738356187604-g3208gagcv1f9fmhfjbp3npahui2dtvm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
