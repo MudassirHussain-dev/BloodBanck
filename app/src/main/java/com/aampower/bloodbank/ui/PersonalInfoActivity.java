@@ -247,10 +247,11 @@ public class PersonalInfoActivity extends AppCompatActivity implements View.OnCl
                 String gender = preferences.getString("gender", "");
                 String email = preferences.getString("email", "");
 
+
                 if (name != null && !name.equals("null")) {
                     etName.setText(name);
                 }
-                if (city != null && !city.equals("null")) {
+                if (city != null && !city.equals("nul                                                                                                                                                                                                                              l")) {
                     etCity.setText(city);
                 }
                 if (blood_group != null && !blood_group.equals("null")) {
@@ -324,10 +325,11 @@ public class PersonalInfoActivity extends AppCompatActivity implements View.OnCl
         }
         return true;
     }
+
     private static final int CAMERA_REQUEST = 1888; // field
 
-    private void takePicture(){ //you can call this every 5 seconds using a timer or whenever you want
-        Intent cameraIntent = new  Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+    private void takePicture() { //you can call this every 5 seconds using a timer or whenever you want
+        Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
         startActivityForResult(cameraIntent, CAMERA_REQUEST);
     }
 
@@ -355,18 +357,15 @@ public class PersonalInfoActivity extends AppCompatActivity implements View.OnCl
                 dialogFragment.show(getSupportFragmentManager(), "tag1");
             }
 
-        }
-        else if (id == R.id.etBloodGroup) {
+        } else if (id == R.id.etBloodGroup) {
 
             choosingBloodGroup();
 
-        }
-        else if (id == R.id.etDOB) {
+        } else if (id == R.id.etDOB) {
 
             choosingDOB(etDOB);
 
-        }
-        else if (id == R.id.profile_image) {
+        } else if (id == R.id.profile_image) {
             // checking permissions
             if (!hasPermissions(this, PERMISSIONS)) {
 
@@ -377,11 +376,9 @@ public class PersonalInfoActivity extends AppCompatActivity implements View.OnCl
                 takingPhotoAlert();
 
             }
-        }
-        else if (id == R.id.tvProfilePic) {
+        } else if (id == R.id.tvProfilePic) {
             profile_image.performClick();
-        }
-        else if (id == R.id.btnFinish) {
+        } else if (id == R.id.btnFinish) {
 
             final String name = etName.getText().toString().trim();
             final String email = etEmail.getText().toString().trim();
@@ -425,7 +422,7 @@ public class PersonalInfoActivity extends AppCompatActivity implements View.OnCl
             dialog.setCancelable(false);
             dialog.show();
 
-            FirebaseInstanceId.getInstance().getInstanceId().addOnSuccessListener( context,  new OnSuccessListener<InstanceIdResult>() {
+            FirebaseInstanceId.getInstance().getInstanceId().addOnSuccessListener(context, new OnSuccessListener<InstanceIdResult>() {
                 @Override
                 public void onSuccess(InstanceIdResult instanceIdResult) {
                     String newToken = instanceIdResult.getToken();
@@ -455,7 +452,7 @@ public class PersonalInfoActivity extends AppCompatActivity implements View.OnCl
 
             if (code == 423) {
 
-                FirebaseInstanceId.getInstance().getInstanceId().addOnSuccessListener( context,  new OnSuccessListener<InstanceIdResult>() {
+                FirebaseInstanceId.getInstance().getInstanceId().addOnSuccessListener(context, new OnSuccessListener<InstanceIdResult>() {
                     @Override
                     public void onSuccess(InstanceIdResult instanceIdResult) {
                         String newToken = instanceIdResult.getToken();
@@ -473,9 +470,9 @@ public class PersonalInfoActivity extends AppCompatActivity implements View.OnCl
                     }
                 });
 
-            }else if (code == Constants.UPDATE_PASS){
+            } else if (code == Constants.UPDATE_PASS) {
 
-                FirebaseInstanceId.getInstance().getInstanceId().addOnSuccessListener( context,  new OnSuccessListener<InstanceIdResult>() {
+                FirebaseInstanceId.getInstance().getInstanceId().addOnSuccessListener(context, new OnSuccessListener<InstanceIdResult>() {
                     @Override
                     public void onSuccess(InstanceIdResult instanceIdResult) {
                         String newToken = instanceIdResult.getToken();
@@ -497,7 +494,7 @@ public class PersonalInfoActivity extends AppCompatActivity implements View.OnCl
 
                 if (pass.equals(cPass)) {
 
-                    FirebaseInstanceId.getInstance().getInstanceId().addOnSuccessListener( context,  new OnSuccessListener<InstanceIdResult>() {
+                    FirebaseInstanceId.getInstance().getInstanceId().addOnSuccessListener(context, new OnSuccessListener<InstanceIdResult>() {
                         @Override
                         public void onSuccess(InstanceIdResult instanceIdResult) {
                             String newToken = instanceIdResult.getToken();
@@ -545,7 +542,7 @@ public class PersonalInfoActivity extends AppCompatActivity implements View.OnCl
 
             builder.create().show();
 
-        }else if (id == R.id.etLastBleed){
+        } else if (id == R.id.etLastBleed) {
 
             choosingDOB(etLastBleed);
 
@@ -667,9 +664,7 @@ public class PersonalInfoActivity extends AppCompatActivity implements View.OnCl
             public void onClick(View v) {
 
                 SharedPreferences preferences = getSharedPreferences(getString(R.string.PREF_FILE), MODE_PRIVATE);
-
                 if (pinview.getText().toString().trim().length() > 0) {
-
                     String storedOTP = preferences.getString("otpCode", "");
 
                     if (pinview.getText().toString().trim().equals(storedOTP)) {
@@ -690,7 +685,7 @@ public class PersonalInfoActivity extends AppCompatActivity implements View.OnCl
 
                         alertDialog.dismiss();
 
-                    }else {
+                    } else {
                         Toast.makeText(context, "OTP not match", Toast.LENGTH_SHORT).show();
                     }
 

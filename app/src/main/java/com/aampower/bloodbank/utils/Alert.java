@@ -37,7 +37,7 @@ public class Alert extends Dialog {
         lp.copyFrom(getWindow().getAttributes());
         lp.width = WindowManager.LayoutParams.WRAP_CONTENT;
         lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
-//        show();
+       // show();
         getWindow().setAttributes(lp);
 
     }

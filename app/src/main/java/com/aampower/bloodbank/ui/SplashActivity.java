@@ -24,7 +24,7 @@ public class SplashActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_splash);
 
-//        testing();
+      // testing();
 
 
         int SPLASH_DISPLAY_LENGTH = 3000;

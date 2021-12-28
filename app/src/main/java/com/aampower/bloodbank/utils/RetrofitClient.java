@@ -7,7 +7,7 @@ public class RetrofitClient {
 
 //    private static final String BASE_URL = "http://128.1.0.5/BloodBank/public/";
 
-    private static final String BASE_URL = "http://bloodbank.com.pk/services/BloodBank/public/";
+    private static final String BASE_URL = "https://bloodbank.com.pk/services/BloodBank/public/";
 
     private static RetrofitClient mInstance;
     private Retrofit retrofit;

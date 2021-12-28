@@ -2,14 +2,12 @@ package com.aampower.bloodbank.utils;
 
 import com.aampower.bloodbank.model.BloodRequestsListModel;
 import com.aampower.bloodbank.model.CitiesModel;
-import com.aampower.bloodbank.model.CityModel;
 import com.aampower.bloodbank.model.DonorsListModel;
 import com.aampower.bloodbank.model.FullFillListModel;
 import com.aampower.bloodbank.model.RecentDonorsList;
 
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
-import okhttp3.Response;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.Field;
@@ -23,11 +21,11 @@ public interface Api {
 
     @FormUrlEncoded
     @POST("sendingOTP")
-    Call<ResponseBody> sendingOTP(
+    Call<ResponseBody>
+    sendingOTP(
 
             @Field("phone") String phoneNumber,
             @Field("otpCode") String otpCode
-
     );
 
     @FormUrlEncoded
@@ -120,9 +118,7 @@ public interface Api {
     @FormUrlEncoded
     @POST("gettingMyAllRequests")
     Call<BloodRequestsListModel> gettingMyAllRequests(
-
             @Field("user_id") String user_id
-
     );
 
     @FormUrlEncoded
@@ -159,9 +155,7 @@ public interface Api {
 
     @FormUrlEncoded
     @POST("gettingTotalDonReq")
-    Call<ResponseBody> gettingTotalDonReq(
-
-            @Field("phoneNumber") String phoneNumber
+    Call<ResponseBody> gettingTotalDonReq(@Field("phoneNumber") String phoneNumber
 
     );
 
@@ -169,9 +163,9 @@ public interface Api {
     @POST("userLogin")
     Call<ResponseBody> userLogin(
 
-      @Field("phoneNumber") String phoneNumber,
-      @Field("password") String password,
-      @Field("token") String token
+            @Field("phoneNumber") String phoneNumber,
+            @Field("password") String password,
+            @Field("token") String token
 
     );
 
@@ -180,22 +174,21 @@ public interface Api {
     @POST("insertBloodRequest")
     Call<ResponseBody> insertBloodRequest(
 
-      @Field("user_id") String user_id,
-      @Field("blood_request_type") String blood_request_type,
-      @Field("blood_group") String blood_group,
-      @Field("reason") String reason,
-      @Field("latlng") String latlng,
-      @Field("city") String city,
-      @Field("address") String address,
-      @Field("message") String message,
-      @Field("phone_number_sec_person") String phone_number_sec_person
+            @Field("user_id") String user_id,
+            @Field("blood_request_type") String blood_request_type,
+            @Field("blood_group") String blood_group,
+            @Field("reason") String reason,
+            @Field("latlng") String latlng,
+            @Field("city") String city,
+            @Field("address") String address,
+            @Field("message") String message,
+            @Field("phone_number_sec_person") String phone_number_sec_person
 
     );
 
     @FormUrlEncoded
     @POST("gettingFulfillReqs")
     Call<FullFillListModel> gettingFulfillReqs(
-
             @Field("req_id") String req_id
 
     );
